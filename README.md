@@ -12,7 +12,6 @@ The scraper automatically creates the necessary output directories and sample HT
 - **Automated File Management:**  
   - Creates `output/` directory automatically if missing.  
   - Saves parsed results to `output/product_details.txt`.  
-  - Creates `fixtures/` directory with sample HTML for testing, if not present.
 - **Single Entry Point:** Run `main.py` once; it orchestrates fetching, parsing, and saving the output automatically.
 - **Safe & Educational Scraping:** Designed to demonstrate parsing and scraping workflows without scraping live production websites by default.
 
@@ -32,8 +31,7 @@ The scraper automatically creates the necessary output directories and sample HT
 
 **Directories created automatically during runtime:**
 
-- `output/` — Stores the `product_details.txt` file  
-- `fixtures/` — Stores `products_page.html` sample file  
+- `output/` — Stores the `product_details.txt` file   
 
 ## How to Run
 
@@ -49,7 +47,7 @@ pip install requests beautifulsoup4
 
 1. Clone the repository:
 ```
-git clone https://github.com/<your-username>/python-web-scraper.git
+git clone https://github.com/szthaarnav/python-web-scraper.git
 ```
 2. Navigate to the project directory:
 ```
@@ -72,7 +70,7 @@ The program will automatically fetch or load HTML, parse product data, and save 
 Product Name:                   Price:  
 Wireless Mouse                  $24.99  
 Mechanical Keyboard             $79.49  
-USB-C Hub                        $39.95  
+USB-C Hub                       $39.95  
 
 Total: $144.43
 
@@ -81,8 +79,4 @@ Total: $144.43
 - Add export options to CSV or JSON  
 - Include CLI arguments for custom URLs and output file locations  
 - Add unit tests for parsing logic  
-- Implement logging for better debugging and tracking  
-
-## License
-
-MIT License – This repository is intended for educational and portfolio purposes.
+- Implement logging for better debugging and tracking
